@@ -1,0 +1,9 @@
+@mixin dm-serif-display($weight){
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+@mixin karla($weight){
+    font-family: 'Karla', sans-serif;
+    font-weight: $weight;
+}
