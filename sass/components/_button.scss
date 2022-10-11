@@ -1,0 +1,15 @@
+@use "colors";
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn {
+    border: 1px solid colors.$gray-very-light;
+    padding: 0.5em;
+    text-transform: uppercase;
+}

@@ -1,0 +1,39 @@
+@use "../components/mixins";
+@use "../components/colors";
+header {
+    @include mixins.margin-side;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        ul {
+            @include mixins.padding-side-top;
+            text-transform: uppercase;
+            color: colors.$gray-very-light;
+            font-size: 2rem;
+            background: colors.$violet-very-dark;
+            background-image: url("../../images/bg-pattern-mobile-nav.svg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+            width: 100%;
+            height: 90vh;
+            display: none;
+            li {
+              padding: 0.5em;
+              display: flex;
+              a {
+                width: 100%;
+              }
+            }
+        }
+    }
+}

@@ -1,2 +1,12 @@
 @use "base";
 @use "components";
+@use "layout";
+
+
+section,
+header,
+footer,
+main {
+    border: 1px solid red;
+    
+}
